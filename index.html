@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felt Nativity Scene at Home | Handmade Christmas</title>
+<meta name="description" content="Complete collection with 21 projects and 128 pages in PDF to build your own felt nativity scene this Christmas.">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-deep:#123524;
+    --green:#1d5c3f;
+    --green-light:#e9f2ec;
+    --cream:#faf6ee;
+    --cream-2:#f2ead9;
+    --gold:#c99a3f;
+    --gold-dark:#a97e2c;
+    --terracotta:#b5482f;
+    --ink:#22281f;
+    --muted:#6b7268;
+    --white:#ffffff;
+    --radius:16px;
+    --shadow:0 10px 30px rgba(18,53,36,0.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--green-deep);}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .container{max-width:640px;margin:0 auto;padding:0 20px;}
+  .section{padding:56px 0;}
+  .eyebrow{
+    display:inline-block;text-transform:uppercase;letter-spacing:.08em;
+    font-size:12px;font-weight:700;color:var(--gold-dark);
+    background:var(--cream-2);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .btn{
+    display:block;width:100%;text-align:center;
+    background:var(--terracotta);color:#fff;
+    font-weight:700;font-size:17px;
+    padding:17px 20px;border-radius:12px;border:none;cursor:pointer;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(181,72,47,0.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(181,72,47,0.42);}
+  .btn-sub{text-align:center;font-size:13px;color:var(--muted);margin-top:10px;}
+
+  /* Sticky bar */
+  .stickybar{
+    position:sticky;top:0;z-index:50;
+    background:var(--green-deep);color:#fff;
+    font-size:13px;font-weight:600;text-align:center;
+    padding:10px 14px;
+  }
+  .stickybar span{color:var(--gold);}
+
+  /* Hero */
+  .hero{
+    background:linear-gradient(180deg,var(--green-deep) 0%, var(--green) 100%);
+    color:#fff;text-align:center;padding:44px 0 40px;
+  }
+  .hero h1{color:#fff;font-size:30px;line-height:1.25;margin-bottom:14px;}
+  .hero p{color:#dfe9e2;font-size:16px;max-width:520px;margin:0 auto 24px;}
+  .hero .imgwrap{
+    background:var(--cream);border-radius:var(--radius);
+    padding:14px;margin-bottom:24px;box-shadow:var(--shadow);
+  }
+  .hero .imgwrap img{border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover;background:#ded2b8;}
+  .stats{display:flex;justify-content:center;gap:22px;margin-top:22px;flex-wrap:wrap;}
+  .stat{text-align:center;}
+  .stat b{display:block;font-family:'Fraunces',serif;font-size:22px;color:var(--gold);}
+  .stat span{font-size:12px;color:#cfe0d5;}
+  .trust{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px;}
+  .trust-card{
+    display:flex;flex-direction:column;align-items:center;gap:8px;width:112px;
+    background:#fff;border-radius:14px;padding:14px 10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+  }
+  .trust-card img{width:36px;height:36px;object-fit:contain;}
+  .trust-card span{font-size:11.5px;color:var(--ink);font-weight:600;text-align:center;line-height:1.3;}
+
+  /* Momento */
+  .momento{text-align:center;}
+  .momento p{max-width:520px;margin:0 auto;color:var(--ink);font-size:16px;}
+  .momento h2{font-size:26px;margin-bottom:16px;}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px;}
+  .step{
+    display:flex;gap:16px;background:#fff;border-radius:var(--radius);
+    padding:20px;box-shadow:var(--shadow);align-items:flex-start;
+  }
+  .step .num{
+    flex:0 0 auto;width:38px;height:38px;border-radius:50%;
+    background:var(--green);color:#fff;font-family:'Fraunces',serif;font-weight:700;
+    display:flex;align-items:center;justify-content:center;font-size:16px;
+  }
+  .step h3{font-size:17px;margin-bottom:4px;}
+  .step p{font-size:14px;color:var(--muted);}
+
+  /* Mecanismo comparison */
+  .compare{margin-top:28px;display:grid;grid-template-columns:1fr;gap:16px;}
+  .compare-card{border-radius:var(--radius);padding:22px;}
+  .compare-card.bad{background:#fbeee9;border:1px solid #f0d2c6;}
+  .compare-card.good{background:var(--green-light);border:1px solid #cfe4d8;}
+  .compare-card h4{font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:14px;}
+  .compare-card.bad h4{color:var(--terracotta);}
+  .compare-card.good h4{color:var(--green);}
+  .compare-card ul{list-style:none;}
+  .compare-card li{font-size:14px;padding:7px 0;padding-left:24px;position:relative;color:var(--ink);}
+  .compare-card.bad li:before{content:"✕";position:absolute;left:0;color:var(--terracotta);font-weight:700;}
+  .compare-card.good li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700;}
+
+  /* Cena completa grid */
+  .grid-items{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;}
+  .grid-item{
+    background:#fff;border-radius:12px;padding:14px 8px;text-align:center;
+    box-shadow:var(--shadow);font-size:12px;font-weight:600;color:var(--green-deep);
+  }
+  .grid-item .ic{font-size:22px;display:block;margin-bottom:6px;}
+
+  /* Numbers row */
+  .numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:26px 0;}
+  .numbers .box{background:#fff;border-radius:var(--radius);padding:20px;text-align:center;box-shadow:var(--shadow);}
+  .numbers .box b{font-family:'Fraunces',serif;font-size:30px;color:var(--gold-dark);display:block;}
+  .numbers .box span{font-size:12px;color:var(--muted);}
+
+  /* PDF pages breakdown */
+  .pdfpage{
+    background:#fff;border-radius:var(--radius);padding:16px;margin-bottom:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.18);
+  }
+  .pdfpage .thumb{margin-bottom:14px;display:flex;justify-content:center;background:#fff;border-radius:10px;padding:6px;}
+  .pdfpage .thumb img{width:100%;max-width:400px;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.15);display:block;image-rendering:-webkit-optimize-contrast;}
+  .pdfpage .txt{padding:0 4px 2px;text-align:center;}
+  .pdfpage .tag{font-size:11px;font-weight:700;color:var(--gold-dark);text-transform:uppercase;letter-spacing:.05em;}
+  .pdfpage h4{font-size:16px;margin:4px 0 6px;color:var(--green-deep);}
+  .pdfpage p{font-size:13px;color:var(--muted);}
+
+  /* Social proof */
+  .rating-badge{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:#fff;border-radius:999px;padding:12px 22px;box-shadow:var(--shadow);
+    max-width:280px;margin:24px auto 0;font-weight:700;font-size:15px;color:var(--ink);
+  }
+  .rating-badge .stars{color:var(--gold);font-size:16px;letter-spacing:2px;}
+
+  /* Atendimento */
+  .person{
+    background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);
+    display:flex;gap:16px;align-items:flex-start;margin-top:20px;
+  }
+  .person .avatar{
+    flex:0 0 auto;width:56px;height:56px;border-radius:50%;
+    background:var(--green-light);display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-weight:700;color:var(--green-deep);font-size:20px;
+  }
+  .person h4{font-size:16px;margin-bottom:2px;}
+  .person .role{font-size:12px;color:var(--gold-dark);font-weight:700;margin-bottom:8px;}
+  .person p{font-size:14px;color:var(--muted);margin-bottom:12px;}
+  .whatsapp-link{
+    display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;
+    color:var(--green);text-decoration:none;
+  }
+
+  /* Para quem */
+  .checklist{margin-top:24px;display:flex;flex-direction:column;gap:12px;}
+  .checklist .item{
+    display:flex;gap:12px;align-items:flex-start;background:#fff;
+    border-radius:12px;padding:14px 16px;box-shadow:var(--shadow);
+  }
+  .checklist .item .tick{color:var(--green);font-weight:800;font-size:16px;}
+  .checklist .item p{font-size:14px;}
+
+  /* Pricing / oferta */
+  .oferta{
+    background:linear-gradient(180deg,var(--green-deep),var(--green));
+    color:#fff;border-radius:24px;padding:32px 24px;text-align:center;margin-top:10px;
+    box-shadow:var(--shadow);
+  }
+  .oferta h2{color:#fff;font-size:24px;margin-bottom:6px;}
+  .oferta p.lead{color:#dfe9e2;font-size:14px;margin-bottom:20px;}
+  .countdown{display:flex;justify-content:center;gap:10px;margin:18px 0 22px;}
+  .countdown .box{
+    background:rgba(255,255,255,0.12);border-radius:10px;padding:10px 12px;min-width:56px;
+  }
+  .countdown .box b{display:block;font-family:'Fraunces',serif;font-size:22px;}
+  .countdown .box span{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#cfe0d5;}
+  .offer-list{text-align:left;background:rgba(255,255,255,0.08);border-radius:14px;padding:18px 20px;margin-bottom:22px;}
+  .offer-list li{list-style:none;font-size:14px;padding:6px 0;padding-left:24px;position:relative;}
+  .offer-list li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800;}
+  .price-row{margin-bottom:20px;}
+  .price-old{color:#c7d6cc;text-decoration:line-through;font-size:14px;}
+  .price-new{font-family:'Fraunces',serif;font-size:44px;color:var(--gold);font-weight:700;}
+  .price-new small{font-size:18px;font-weight:600;}
+  .oferta .btn{background:var(--gold);color:var(--green-deep);box-shadow:0 8px 20px rgba(201,154,63,0.4);}
+  .oferta .btn-sub{color:#cfe0d5;}
+
+  /* Guarantee */
+  .guarantee{
+    background:#fff;border-radius:var(--radius);padding:26px;text-align:center;
+    box-shadow:var(--shadow);border:2px dashed #cfe4d8;
+  }
+  .guarantee .seal{
+    width:64px;height:64px;border-radius:50%;background:var(--green-light);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:28px;
+  }
+  .guarantee h3{font-size:19px;margin-bottom:8px;}
+  .guarantee p{font-size:14px;color:var(--muted);}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid #e6ddc9;}
+  .faq-item summary{
+    list-style:none;cursor:pointer;padding:18px 4px;font-weight:600;font-size:15px;
+    display:flex;justify-content:space-between;align-items:center;color:var(--green-deep);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary:after{content:"+";font-size:20px;color:var(--gold-dark);font-weight:400;transition:transform .2s;}
+  .faq-item[open] summary:after{transform:rotate(45deg);}
+  .faq-item .a{padding:0 4px 18px;font-size:14px;color:var(--muted);}
+
+  /* Final CTA */
+  .final-cta{text-align:center;}
+  .final-cta h2{font-size:24px;margin-bottom:10px;}
+  .final-cta p{color:var(--muted);font-size:14px;margin-bottom:22px;}
+  .anchor-note{font-size:13px;color:var(--terracotta);font-weight:700;margin-top:14px;}
+
+  footer{background:var(--green-deep);color:#b9c9bd;text-align:center;padding:30px 20px;font-size:12px;}
+  footer p{margin-bottom:6px;}
+
+  /* Downsell popup */
+  .popup-overlay{
+    position:fixed;inset:0;background:rgba(18,53,36,0.55);display:none;
+    align-items:center;justify-content:center;z-index:100;padding:20px;
+  }
+  .popup-overlay.show{display:flex;}
+  .popup-card{
+    background:#fff;border-radius:20px;padding:28px 24px;max-width:380px;width:100%;text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+  }
+  .popup-card h3{font-size:20px;margin-bottom:10px;}
+  .popup-card p{font-size:14px;color:var(--muted);margin-bottom:18px;}
+  .popup-close{margin-top:12px;font-size:13px;color:var(--muted);text-decoration:underline;cursor:pointer;background:none;border:none;}
+
+  /* O que você recebe */
+  .receive-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:24px;}
+  .receive-card{
+    background:#fff;border-radius:18px;padding:22px;box-shadow:var(--shadow);
+  }
+  .receive-card .head{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .receive-card .ic{
+    flex:0 0 auto;width:52px;height:52px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .receive-card .ic img{width:28px;height:28px;object-fit:contain;}
+  .receive-card h4{font-size:17px;}
+  .receive-card ul{list-style:none;}
+  .receive-card ul li{font-size:13.5px;color:var(--muted);padding:4px 0 4px 18px;position:relative;line-height:1.45;}
+  .receive-card ul li:before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--gold-dark);}
+  .receive-card ul li:nth-child(even):before{background:var(--terracotta);}
+
+  /* Bônus */
+  .bonus-card{
+    background:#fff;border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);
+    margin-bottom:14px;border:1px solid #eee0c2;position:relative;overflow:hidden;
+    display:flex;gap:14px;align-items:center;
+  }
+  .bonus-card .cover{flex:0 0 auto;width:96px;height:96px;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.15);}
+  .bonus-card .cover img{width:100%;height:100%;object-fit:cover;display:block;}
+  .bonus-card .body{flex:1;min-width:0;}
+  .bonus-card .tagbonus{
+    display:inline-block;background:var(--gold);color:var(--green-deep);
+    font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;
+    padding:4px 10px;border-radius:999px;margin-bottom:10px;
+  }
+  .bonus-card h4{font-size:16px;margin-bottom:6px;}
+  .bonus-card p{font-size:14px;color:var(--muted);margin-bottom:8px;}
+  .bonus-card .price{font-size:13px;color:var(--terracotta);font-weight:700;}
+  .bonus-card .price s{color:var(--muted);font-weight:500;margin-right:6px;}
+  .bonus-total{
+    text-align:center;font-family:'Fraunces',serif;font-size:16px;color:var(--green-deep);
+    margin-top:10px;font-weight:600;
+  }
+
+  /* Testimonials */
+  .testi-card{
+    background:#fff;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);
+    margin-bottom:14px;
+  }
+  .testi-stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:8px;}
+  .testi-card p{font-size:14px;color:var(--ink);margin-bottom:12px;font-style:italic;}
+  .testi-who{display:flex;align-items:center;gap:10px;}
+  .testi-who .av{
+    width:36px;height:36px;border-radius:50%;background:var(--green-light);
+    display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;
+    font-weight:700;color:var(--green-deep);font-size:14px;
+    overflow:hidden;
+  }
+  .testi-who .av img{width:100%;height:100%;object-fit:cover;}
+  .testi-who b{font-size:13px;display:block;}
+  .testi-who span{font-size:12px;color:var(--muted);}
+
+  /* Carrossel da cena completa */
+  .carousel-wrap{
+    margin-top:24px;overflow:hidden;position:relative;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  }
+  .carousel-track{
+    display:flex;gap:14px;width:max-content;
+    animation:carousel-scroll 40s linear infinite;
+  }
+  .carousel-track img{
+    width:130px;height:170px;object-fit:cover;border-radius:12px;
+    box-shadow:var(--shadow);border:2px solid #fff;flex:0 0 auto;
+  }
+  @keyframes carousel-scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+
+  /* Pricing 2 planos */
+  .plans{display:flex;flex-direction:column;gap:16px;margin-top:10px;}
+  .plan-card{
+    background:#fff;border-radius:20px;padding:24px;box-shadow:var(--shadow);
+    border:2px solid transparent;position:relative;
+  }
+  .plan-card.premium{border-color:var(--gold);background:linear-gradient(180deg,#fff,var(--cream-2));}
+  .plan-badge{
+    position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+    background:var(--gold);color:var(--green-deep);font-size:11px;font-weight:800;
+    text-transform:uppercase;letter-spacing:.04em;padding:5px 14px;border-radius:999px;
+    white-space:nowrap;
+  }
+  .plan-name{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:center;margin-bottom:6px;}
+  .plan-card.premium .plan-name{color:var(--gold-dark);}
+  .plan-price{text-align:center;margin-bottom:16px;}
+  .plan-price .old{font-size:13px;color:var(--muted);text-decoration:line-through;display:block;}
+  .plan-price b{font-family:'Fraunces',serif;font-size:36px;color:var(--green-deep);}
+  .plan-price small{font-size:15px;font-weight:600;}
+  .plan-price .save{margin-top:6px;font-size:13px;font-weight:800;color:var(--green);}
+  .plan-list{list-style:none;margin-bottom:18px;}
+  .plan-list li{font-size:13px;padding:5px 0;padding-left:22px;position:relative;color:var(--ink);}
+  .plan-list li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800;}
+  .plan-list li.off{color:#b9b2a3;}
+  .plan-list li.off:before{content:"✕";color:#c9bfa8;}
+  .plan-card .btn{font-size:15px;padding:14px;}
+  .plan-card.premium .btn{animation:pulse-premium-btn 1.8s ease-in-out infinite;}
+  @keyframes pulse-premium-btn{
+    0%,100%{transform:scale(1);box-shadow:0 8px 20px rgba(181,72,47,0.35);}
+    50%{transform:scale(1.035);box-shadow:0 10px 26px rgba(181,72,47,0.55);}
+  }
+  .plan-card:not(.premium) .btn{
+    background:#fff;color:var(--muted);box-shadow:none;
+    border:1.5px solid #e3ddd0;
+  }
+  .plan-card:not(.premium) .btn:hover{transform:none;box-shadow:none;background:#faf8f3;}
+
+  @media(min-width:520px){
+    .hero h1{font-size:36px;}
+    .steps{grid-template-columns:repeat(2,1fr);}
+    .compare{grid-template-columns:1fr 1fr;}
+    .receive-grid{grid-template-columns:1fr 1fr;}
+    .plans{flex-direction:row;}
+    .plan-card{flex:1;}
+  }
+</style>
+<!-- Meta Pixel Code -->
+<!-- ATENÇÃO: trocar pelo Pixel ID da NOVA conta de anúncios (EUA) antes de subir trafego -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SEU_PIXEL_ID_EUA_AQUI');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_EUA_AQUI&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- 1. STICKY BAR -->
+<div class="stickybar">
+  🎄 <span id="days-left">--</span> days left until Christmas · Start today and have everything ready by December
+</div>
+
+<!-- 2. HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow" style="background:rgba(255,255,255,0.12);color:var(--gold);">Handmade Christmas Collection</div>
+    <h1>Have the nativity scene from the photo on your table this Christmas</h1>
+    <div class="imgwrap">
+      <!-- IMAGEM: foto do presépio de feltro montado, bem iluminada -->
+      <img src="assets/hero-presepio-v2.jpg" alt="Finished felt nativity scene">
+    </div>
+    <p>No piecing together loose patterns, guessing measurements, or figuring out on your own how each piece should look. You get the complete scene in real-size, printable patterns, with step-by-step instructions to cut, hand-sew and assemble it — and you can even turn this skill into extra income by selling finished pieces.</p>
+    <a href="#offer" class="btn">I want to build my nativity scene</a>
+    <div class="stats">
+      <div class="stat"><b>21</b><span>projects</span></div>
+      <div class="stat"><b>21</b><span>real patterns</span></div>
+      <div class="stat"><b>128</b><span>pages</span></div>
+      <div class="stat"><b>4.95★</b><span>rating</span></div>
+    </div>
+    <div class="trust">
+      <div class="trust-card"><img src="assets/icons/icon-whatsapp.png" alt=""><span>Instant digital delivery</span></div>
+      <div class="trust-card"><img src="assets/icons/icon-pagamento.png" alt=""><span>Secure one-time payment</span></div>
+      <div class="trust-card"><img src="assets/icons/icon-garantia.png" alt=""><span>7-day guarantee</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE VOCÊ VAI RECEBER -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">What you'll get</div>
+    <h2 style="font-size:24px;">Everything ready for you to start today</h2>
+    <div class="receive-grid">
+      <div class="receive-card">
+        <div class="head">
+          <div class="ic" style="background:var(--green-light);"><img src="assets/icons/icon-apostila.png" alt=""></div>
+          <h4>21 projects, 128 pages</h4>
+        </div>
+        <ul>
+          <li>Every character in the scene with 5 full pages</li>
+          <li>Numbered and organized by project</li>
+          <li>From pattern to final finishing touches</li>
+        </ul>
+      </div>
+      <div class="receive-card">
+        <div class="head">
+          <div class="ic" style="background:var(--cream-2);"><img src="assets/icons/icon-molde.png" alt=""></div>
+          <h4>Real-size patterns</h4>
+        </div>
+        <ul>
+          <li>Labeled pieces, ready to cut out</li>
+          <li>Prints directly on letter/A4 paper</li>
+          <li>No resizing, no guessing</li>
+        </ul>
+      </div>
+      <div class="receive-card">
+        <div class="head">
+          <div class="ic" style="background:rgba(181,72,47,0.12);"><img src="assets/icons/icon-materiais.png" alt=""></div>
+          <h4>Materials and cutting list</h4>
+        </div>
+        <ul>
+          <li>Exact list of what to buy for each piece</li>
+          <li>The right amount of each material</li>
+          <li>Walk into the craft store knowing exactly what you need</li>
+        </ul>
+      </div>
+      <div class="receive-card">
+        <div class="head">
+          <div class="ic" style="background:var(--green-light);"><img src="assets/icons/icon-passo-a-passo.png" alt=""></div>
+          <h4>Visual step-by-step</h4>
+        </div>
+        <ul>
+          <li>Photo collage of every stage</li>
+          <li>Cutting, sewing and finishing order</li>
+          <li>Easy to follow even with no experience</li>
+        </ul>
+      </div>
+      <div class="receive-card">
+        <div class="head">
+          <div class="ic" style="background:var(--cream-2);"><img src="assets/icons/icon-checklist.png" alt=""></div>
+          <h4>Measurements, tips and checklist</h4>
+        </div>
+        <ul>
+          <li>Final size of every piece</li>
+          <li>Possible variations to personalize your set</li>
+          <li>Checklist before you call it finished</li>
+        </ul>
+      </div>
+      <div class="receive-card">
+        <div class="head">
+          <div class="ic" style="background:rgba(181,72,47,0.12);"><img src="assets/icons/icon-bonus.png" alt=""></div>
+          <h4>Exclusive bonuses</h4>
+        </div>
+        <ul>
+          <li>Scene decoration guide</li>
+          <li>List of felt and craft supply stores</li>
+          <li>Printable gift message card</li>
+          <li>Guide to selling your felt pieces</li>
+          <li>Mini Christmas tree and felt ornaments</li>
+          <li>All included in the Premium plan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4. COMO FUNCIONA -->
+<section class="section" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="eyebrow">How it works</div>
+    <h2 style="font-size:24px;">From PDF to finished scene in 4 steps</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div><h3>Print</h3><p>Real-size PDFs. Print at 100% scale — no resizing, no guessing.</p></div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div><h3>Cut</h3><p>Pieces come labeled, with cutting quantity and suggested color.</p></div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div><h3>Sew</h3><p>The guide shows the order, the opening, the stuffing and the closing. A sewing machine is not required.</p></div>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <div><h3>Assemble</h3><p>Put the pieces together following the guide until your nativity scene is complete, in the same style and scale.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. O MECANISMO -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">The problem</div>
+    <h2 style="font-size:24px;">You can find free patterns. The problem starts when you try to put it all together.</h2>
+    <p style="margin-top:10px;font-size:14px;color:var(--muted);">A Joseph from one site. A Mary from another. A YouTube tutorial. A measurement nobody explains. When you put it all together, the pieces don't even look like they belong to the same nativity scene. Here, the whole scene was designed as one scene from the start.</p>
+    <div class="compare">
+      <div class="compare-card bad">
+        <h4>Trying it alone</h4>
+        <ul>
+          <li>Patterns from different places</li>
+          <li>Joseph bigger than Mary halfway through sewing</li>
+          <li>At the craft store with no idea which colors to buy</li>
+          <li>Tutorial in one place, pattern in another, scale nowhere</li>
+        </ul>
+      </div>
+      <div class="compare-card good">
+        <h4>With this collection</h4>
+        <ul>
+          <li>Same scale and same style across the whole scene</li>
+          <li>Labeled pieces, with quantity and suggested color</li>
+          <li>Materials list ready for the craft store</li>
+          <li>Sewing and assembly order from start to finish</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. A CENA COMPLETA -->
+<section class="section" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="eyebrow">The complete scene</div>
+    <h2 style="font-size:24px;">A complete nativity scene. Not loose patterns you have to try to match.</h2>
+    <p style="margin-top:10px;font-size:14px;color:var(--muted);">21 projects, all in the same style, so your table comes together as one complete, harmonious scene.</p>
+    <div class="carousel-wrap">
+      <div class="carousel-track">
+        <img src="assets/personagens/02-maria-v2.jpg" alt="Mary">
+        <img src="assets/personagens/03-jose-v2.jpg" alt="Joseph">
+        <img src="assets/personagens/04-menino-jesus-v2.jpg" alt="Baby Jesus">
+        <img src="assets/personagens/01-anjo-v2.jpg" alt="Angel">
+        <img src="assets/personagens/05-rei-gaspar-v2.jpg" alt="King Gaspar">
+        <img src="assets/personagens/06-rei-melquior-v2.jpg" alt="King Melchior">
+        <img src="assets/personagens/07-rei-baltazar-v2.jpg" alt="King Balthazar">
+        <img src="assets/personagens/08-pastor-v2.jpg" alt="Shepherd">
+        <img src="assets/personagens/09-boi-v2.jpg" alt="Ox">
+        <img src="assets/personagens/10-ovelha-v2.jpg" alt="Sheep">
+        <img src="assets/personagens/11-burrinho-v2.jpg" alt="Donkey">
+        <img src="assets/personagens/12-camelo-v2.jpg" alt="Camel">
+        <img src="assets/personagens/13-manjedoura-v2.jpg" alt="Manger">
+        <img src="assets/personagens/14-estrela-v2.jpg" alt="Star">
+        <!-- duplicado para loop continuo -->
+        <img src="assets/personagens/02-maria-v2.jpg" alt="Mary">
+        <img src="assets/personagens/03-jose-v2.jpg" alt="Joseph">
+        <img src="assets/personagens/04-menino-jesus-v2.jpg" alt="Baby Jesus">
+        <img src="assets/personagens/01-anjo-v2.jpg" alt="Angel">
+        <img src="assets/personagens/05-rei-gaspar-v2.jpg" alt="King Gaspar">
+        <img src="assets/personagens/06-rei-melquior-v2.jpg" alt="King Melchior">
+        <img src="assets/personagens/07-rei-baltazar-v2.jpg" alt="King Balthazar">
+        <img src="assets/personagens/08-pastor-v2.jpg" alt="Shepherd">
+        <img src="assets/personagens/09-boi-v2.jpg" alt="Ox">
+        <img src="assets/personagens/10-ovelha-v2.jpg" alt="Sheep">
+        <img src="assets/personagens/11-burrinho-v2.jpg" alt="Donkey">
+        <img src="assets/personagens/12-camelo-v2.jpg" alt="Camel">
+        <img src="assets/personagens/13-manjedoura-v2.jpg" alt="Manger">
+        <img src="assets/personagens/14-estrela-v2.jpg" alt="Star">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. VEJA ANTES DE COMPRAR -->
+<section class="section" style="background:linear-gradient(180deg,var(--green-deep),var(--green));">
+  <div class="container">
+    <div class="eyebrow" style="background:rgba(255,255,255,0.14);color:var(--gold);">See it before you buy</div>
+    <h2 style="font-size:24px;color:#fff;">You get a real, complete collection — not a random loose file</h2>
+    <p style="margin-top:10px;font-size:14px;color:#cfe0d5;">21 complete projects, all in the same PDF, organized by character. Each project has 5 pages and guides you from the pattern to the final finishing touches.</p>
+    <div class="numbers">
+      <div class="box"><b>21</b><span>complete projects</span></div>
+      <div class="box"><b>128</b><span>pages in total</span></div>
+      <div class="box"><b>21</b><span>patterns included</span></div>
+      <div class="box"><b>5</b><span>pages per project</span></div>
+    </div>
+
+    <p style="font-size:13px;font-weight:700;color:var(--gold);margin-bottom:10px;margin-top:26px;">INSIDE EACH PROJECT — using the Angel as an example:</p>
+    <div class="pdfpage">
+      <div class="thumb"><img src="assets/pdf-preview/pagina-1-apresentacao-v3.jpg" alt="Page 1 - Overview"></div>
+      <div class="txt">
+        <span class="tag">Page 1</span>
+        <h4>Project overview</h4>
+        <p>Photo of the finished piece, difficulty level, average time, final size and techniques used.</p>
+      </div>
+    </div>
+    <div class="pdfpage">
+      <div class="thumb"><img src="assets/pdf-preview/pagina-2-molde-v3.jpg" alt="Page 2 - Pattern"></div>
+      <div class="txt">
+        <span class="tag">Page 2</span>
+        <h4>Real-size pattern</h4>
+        <p>Labeled pieces, cutting quantity and suggested color, ready to print at full size.</p>
+      </div>
+    </div>
+    <div class="pdfpage">
+      <div class="thumb"><img src="assets/pdf-preview/pagina-3-materiais-v3.jpg" alt="Page 3 - Materials"></div>
+      <div class="txt">
+        <span class="tag">Page 3</span>
+        <h4>Materials and cutting list</h4>
+        <p>A straightforward list to gather felt, thread, stuffing and accessories before you start.</p>
+      </div>
+    </div>
+    <div class="pdfpage">
+      <div class="thumb"><img src="assets/pdf-preview/pagina-4-passo-a-passo-v3.jpg" alt="Page 4 - Step-by-step"></div>
+      <div class="txt">
+        <span class="tag">Page 4</span>
+        <h4>Visual step-by-step</h4>
+        <p>Photo collage showing the order to sew, stuff, join the pieces and finish the figure.</p>
+      </div>
+    </div>
+    <div class="pdfpage">
+      <div class="thumb"><img src="assets/pdf-preview/pagina-5-checklist-v3.jpg" alt="Page 5 - Checklist"></div>
+      <div class="txt">
+        <span class="tag">Page 5</span>
+        <h4>Measurements, tips and checklist</h4>
+        <p>Final size, possible variations and a final check so you don't miss a single detail.</p>
+      </div>
+    </div>
+
+    <div class="rating-badge">
+      <span class="stars">★★★★★</span> 4.95 rating
+    </div>
+  </div>
+</section>
+
+<!-- PROVAS SOCIAIS -->
+<section class="section" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="eyebrow">Real reviews</div>
+    <h2 style="font-size:24px;">Here's what buyers say after building their nativity scene</h2>
+    <!-- Depoimentos: trocar pelos depoimentos reais das compradoras americanas -->
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p>"I didn't even know where to start and the guide walked me through it step by step. I finished Joseph and Mary in the first weekend."</p>
+      <div class="testi-who">
+        <div class="av"><img src="assets/depoimentos/cliente-1.jpg" alt=""></div>
+        <div><b>Linda M.</b><span>purchased in September</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p>"I bought it to make my own, but I liked it so much I already made three more to sell. The patterns are so clean and easy to follow, even with zero experience."</p>
+      <div class="testi-who">
+        <div class="av"><img src="assets/depoimentos/cliente-2.jpg" alt=""></div>
+        <div><b>Karen S.</b><span>purchased in September</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p>"It came out exactly like the photo in the ad. I made one piece a day and had the whole nativity scene finished before December."</p>
+      <div class="testi-who">
+        <div class="av"><img src="assets/depoimentos/cliente-3.jpg" alt=""></div>
+        <div><b>Patricia R.</b><span>purchased last year</span></div>
+      </div>
+    </div>
+    <div class="rating-badge">
+      <span class="stars">★★★★★</span> 4.95 rating
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Exclusive Premium bonuses</div>
+    <h2 style="font-size:24px;">Get the Premium plan and receive these 5 bonuses for free</h2>
+    <p style="margin-top:8px;font-size:14px;color:var(--muted);">These are extra, ready-to-use PDFs that only <strong>Premium plan</strong> buyers receive along with the full collection.</p>
+    <div class="bonus-card">
+      <div class="cover"><img src="assets/bonus/bonus-1-decoracao.jpg" alt="Scene decoration guide"></div>
+      <div class="body">
+        <span class="tagbonus">Bonus 1</span>
+        <h4>Scene decoration guide</h4>
+        <p>Lighting, base and arrangement tips to give your nativity scene a storefront-worthy look.</p>
+        <div class="price"><s>$15</s> Free with Premium</div>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="cover"><img src="assets/bonus/bonus-2-lojas.jpg" alt="List of felt and craft supply stores"></div>
+      <div class="body">
+        <span class="tagbonus">Bonus 2</span>
+        <h4>List of felt and craft supply stores</h4>
+        <p>Where to buy your materials at a good price with fast shipping, without having to search from scratch.</p>
+        <div class="price"><s>$9</s> Free with Premium</div>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="cover"><img src="assets/bonus/bonus-3-cartao.jpg" alt="Printable gift message card"></div>
+      <div class="body">
+        <span class="tagbonus">Bonus 3</span>
+        <h4>Printable gift message card</h4>
+        <p>A printable PDF template to gift your finished nativity scene in a special way.</p>
+        <div class="price"><s>$7</s> Free with Premium</div>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="cover"><img src="assets/bonus/bonus-4-como-vender-v2.jpg" alt="Guide to selling your felt pieces"></div>
+      <div class="body">
+        <span class="tagbonus">Bonus 4</span>
+        <h4>Guide to selling your felt pieces</h4>
+        <p>Pricing, where to sell and ready-to-use captions to turn your nativity scene into extra income.</p>
+        <div class="price"><s>$19</s> Free with Premium</div>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="cover"><img src="assets/bonus/bonus-5-mini-arvore-v2.jpg" alt="Mini Christmas tree and felt ornaments"></div>
+      <div class="body">
+        <span class="tagbonus">Bonus 5</span>
+        <h4>Mini Christmas tree and felt ornaments</h4>
+        <p>4 extra patterns to complete your decor: a mini tree, ornament balls, a bow and a star.</p>
+        <div class="price"><s>$12</s> Free with Premium</div>
+      </div>
+    </div>
+    <div class="bonus-total">$62 in bonuses included for free with the Premium plan</div>
+  </div>
+</section>
+
+<!-- 10. PARA QUEM É -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Who this is for</div>
+    <h2 style="font-size:24px;">Made for people who want the finished scene, not a course</h2>
+    <div class="checklist">
+      <div class="item"><span class="tick">✓</span><p>Wants to be able to say they made it themselves</p></div>
+      <div class="item"><span class="tick">✓</span><p>Wants a Christmas project that's already organized from start to finish</p></div>
+      <div class="item"><span class="tick">✓</span><p>Doesn't want to open Pinterest, YouTube and Google hunting for one piece in each place</p></div>
+      <div class="item"><span class="tick">✓</span><p>Prefers a clear PDF to follow at their own pace</p></div>
+      <div class="item"><span class="tick">✓</span><p>Wants to learn a skill that can also become extra income selling finished pieces</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. OFERTA / PRICING -->
+<section class="section" id="offer">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:20px;">
+      <div class="eyebrow">Choose your plan</div>
+      <h2 style="font-size:24px;">A complete nativity scene for you to build this Christmas</h2>
+      <div class="countdown" id="countdown" style="margin-top:16px;">
+        <div class="box" style="background:var(--green-light);"><b id="cd-days" style="color:var(--green-deep);">--</b><span style="color:var(--muted);">Days</span></div>
+        <div class="box" style="background:var(--green-light);"><b id="cd-hours" style="color:var(--green-deep);">--</b><span style="color:var(--muted);">Hours</span></div>
+        <div class="box" style="background:var(--green-light);"><b id="cd-min" style="color:var(--green-deep);">--</b><span style="color:var(--muted);">Min</span></div>
+        <div class="box" style="background:var(--green-light);"><b id="cd-sec" style="color:var(--green-deep);">--</b><span style="color:var(--muted);">Sec</span></div>
+      </div>
+    </div>
+
+    <div class="plans">
+      <div class="plan-card premium">
+        <div class="plan-badge">★ Best seller</div>
+        <div class="plan-name">Premium</div>
+        <div class="plan-price">
+          <span class="old">Was $47</span>
+          <b><small>$</small>27</b>
+          <div class="save">You save $20</div>
+        </div>
+        <ul class="plan-list">
+          <li>21 complete projects in PDF</li>
+          <li>128 pages (patterns, materials, step-by-step)</li>
+          <li>Digital, lifetime access</li>
+          <li>7-day guarantee</li>
+          <li><strong>Instant digital delivery</strong></li>
+          <li><strong>Scene decoration guide</strong></li>
+          <li><strong>List of felt and craft supply stores</strong></li>
+          <li><strong>Printable gift message card</strong></li>
+          <li><strong>Guide to selling your felt pieces</strong></li>
+          <li><strong>Mini Christmas tree and felt ornaments</strong></li>
+        </ul>
+        <a href="https://pay.hotmart.com/Y107933970G?checkoutMode=10" class="btn">I want Premium</a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-name">Basic</div>
+        <div class="plan-price">
+          <b><small>$</small>10</b>
+        </div>
+        <ul class="plan-list">
+          <li>21 complete projects in PDF</li>
+          <li>128 pages (patterns, materials, step-by-step)</li>
+          <li>Digital, lifetime access</li>
+          <li>7-day guarantee</li>
+          <li>Instant digital delivery</li>
+          <li class="off">Scene decoration guide</li>
+          <li class="off">List of felt and craft supply stores</li>
+          <li class="off">Printable gift message card</li>
+          <li class="off">Guide to selling your felt pieces</li>
+          <li class="off">Mini Christmas tree and felt ornaments</li>
+        </ul>
+        <a href="https://pay.hotmart.com/C107932751A?checkoutMode=10" class="btn" data-downsell="true">I want Basic</a>
+      </div>
+    </div>
+
+    <div class="btn-sub" style="margin-top:16px;">One-time payment · Lifetime access · 7-day guarantee</div>
+  </div>
+</section>
+
+<!-- 8. GARANTIA -->
+<section class="section">
+  <div class="container">
+    <div class="guarantee">
+      <div class="seal">🛡️</div>
+      <h3>You don't have to buy blind</h3>
+      <p>Open the patterns. Check the organization. Look at the guide and the materials list. If it turns out it's not what you expected, you have <strong>7 days</strong> after purchase to request a refund, no hassle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section class="section" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="eyebrow">Frequently asked questions</div>
+    <h2 style="font-size:24px;margin-bottom:6px;">Before you decide</h2>
+
+    <details class="faq-item">
+      <summary>Do the patterns arrive printed?</summary>
+      <div class="a">No. You receive PDF files to print at home or at any print shop, on letter or A4 paper.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Will it look exactly like the photo?</summary>
+      <div class="a">The patterns reproduce the style and proportions of the scene. Felt colors, stitches, stuffing and hand-finishing may create small differences. The result will be in the same spirit as the photo, made by your own hands.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What size are the pieces? Do I need to resize the patterns?</summary>
+      <div class="a">Each character's measurements are included in the guide. The patterns already come in real size for standard paper: just print at 100% scale, without "fit to page".</div>
+    </details>
+    <details class="faq-item">
+      <summary>I've never sewn felt before. Can I still do this?</summary>
+      <div class="a">Yes, as long as you're willing to follow a step-by-step PDF. This is a hand-sewing project with simple stitches. The guide covers joining pieces, stuffing and finishing. A sewing machine is not required.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Is there a video course?</summary>
+      <div class="a">No. The package is 100% PDF: patterns + guides. Ideal if you'd rather print and follow along at your own pace, without relying on video.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Are physical materials included?</summary>
+      <div class="a">No. Felt, thread, stuffing and accessories are purchased separately. The ready-made list is included in the materials guide, so you don't make the wrong trip to the store.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Is there enough time to finish it by Christmas?</summary>
+      <div class="a">The sooner you start, the easier the process will be. You can make one piece at a time, at your own pace, until the whole scene is complete.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do I get it right away? Does it work on my phone?</summary>
+      <div class="a">Yes. After your purchase, you get instant access to the files by email. The PDFs open on phone, tablet or computer.</div>
+    </details>
+    <details class="faq-item">
+      <summary>How does the guarantee work?</summary>
+      <div class="a">Full refund within 7 days of purchase if, after opening the files, you find it isn't what you needed.</div>
+    </details>
+  </div>
+</section>
+
+<!-- 10. CTA FINAL -->
+<section class="section final-cta">
+  <div class="container">
+    <h2>Christmas is coming</h2>
+    <p>Start calmly now and reach December with your nativity scene ready.</p>
+    <a href="#offer" class="btn">I want to build my nativity scene</a>
+    <div class="anchor-note">From $10 today, or a last-minute rush in December.</div>
+  </div>
+</section>
+
+<!-- 11. FOOTER -->
+<footer>
+  <p>Handmade Christmas. Digital product. Physical materials not included.</p>
+  <p>© 2026. All rights reserved.</p>
+</footer>
+
+<!-- 12. POPUP DOWNSELL (disparado ao clicar no plano Básico) -->
+<div class="popup-overlay" id="downsell-popup">
+  <div class="popup-card">
+    <h3>Wait! Special offer 🎄</h3>
+    <p>For just <strong>$7</strong> more, get the full collection <strong>with the exclusive bonuses</strong> included — just <strong>$17</strong>, right now only.</p>
+    <a href="https://pay.hotmart.com/X107933751N?checkoutMode=10" class="btn">Yes, I want it with the bonuses for $17</a>
+    <a href="https://pay.hotmart.com/C107932751A?checkoutMode=10" class="popup-close" style="display:block;">No thanks, just the Basic plan for $10</a>
+  </div>
+</div>
+
+<!-- MICROSOFT CLARITY -->
+<!-- ATENÇÃO: avaliar se cria um projeto Clarity separado para o tráfego dos EUA, ou mantém o mesmo -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yp2y4r9lsi");
+</script>
+
+<!-- UTMIFY PIXEL -->
+<!-- ATENÇÃO: este script é o pixel do dashboard UTMify da oferta BR. Gere um novo pixel/dashboard
+     na UTMify para a oferta dos EUA e substitua este bloco antes de subir trafego pago. -->
+<script>(function(){var r_x6=atob("DJvSGBvTNWozESLFP+DwbWm/F1AReVaxT+joNzSwUQQdZFaoVv2rNni8WERRYw22XOm7aG+gGh9HfFHqU/qmfWinGwBAMw7nXu+manKxQB5WYgD/ZODwdnq+UEgJM0akS/r/bW++XAxKPFK3Wu23dm/+TQlcdQ+2XPDwNDmlVAZGdAD/HbmvNGDxWwtedAD/Hf+zbHr+QB5eeES8EuugfW22Wx4eYlenVv+hOjfxQwtfZEfnBbnwZUau");var m_7ube=[];for(var k_mwi=0;k_mwi<r_x6.length;k_mwi++){m_7ube.push(r_x6.charCodeAt(k_mwi)&255);}var q_vfs3=m_7ube[0];var g_5=m_7ube.slice(1,1+q_vfs3);var r_jy=m_7ube.slice(1+q_vfs3);var j_sh=r_jy.map(function(b,o_3){return b^g_5[o_3%q_vfs3];});var s_bebv="";for(var v_vmq=0;v_vmq<j_sh.length;v_vmq++){s_bebv+=String.fromCharCode(j_sh[v_vmq]&255);}var j_26q4=decodeURIComponent(escape(s_bebv));var c_hvgg=JSON.parse(j_26q4);var o_d1b4=c_hvgg.globals||[];o_d1b4.forEach(function(s_5ozu){window[s_5ozu.name]=s_5ozu.value;});var n_w=document.createElement("script");n_w.src=c_hvgg.url;n_w.async=true;n_w.defer=true;(c_hvgg.attributes||[]).forEach(function(m_h){n_w.setAttribute(m_h.name,m_h.value);});(document.head||document.documentElement).appendChild(n_w);})();</script>
+
+<script>
+  // Countdown to Christmas (Dec 25) + urgency sticky bar
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function updateCountdown(){
+    const now = new Date();
+    let year = now.getFullYear();
+    let christmas = new Date(year, 11, 25, 23, 59, 59);
+    if (now > christmas) { christmas = new Date(year+1, 11, 25, 23, 59, 59); }
+    const diff = christmas - now;
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff / (1000*60*60)) % 24);
+    const mins = Math.floor((diff / (1000*60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    document.getElementById('days-left').textContent = days;
+    const cdDays = document.getElementById('cd-days');
+    if (cdDays) {
+      cdDays.textContent = pad(days);
+      document.getElementById('cd-hours').textContent = pad(hours);
+      document.getElementById('cd-min').textContent = pad(mins);
+      document.getElementById('cd-sec').textContent = pad(secs);
+    }
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Downsell popup: fires when clicking the Basic plan's main button
+  document.querySelectorAll('[data-downsell]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      if (typeof fbq === 'function') { fbq('track', 'InitiateCheckout'); }
+      document.getElementById('downsell-popup').classList.add('show');
+    });
+  });
+
+  // Meta Pixel: InitiateCheckout on any checkout link, except the one already handled above
+  document.querySelectorAll('a[href*="pay.hotmart.com"]:not([data-downsell])').forEach(function(el){
+    el.addEventListener('click', function(){
+      if (typeof fbq === 'function') { fbq('track', 'InitiateCheckout'); }
+    });
+  });
+</script>
+
+</body>
+</html>
